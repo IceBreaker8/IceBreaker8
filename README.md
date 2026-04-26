@@ -1,46 +1,30 @@
  ### Hi, I'm Ahmed
 
-  DevOps / Platform Engineer. I take production Kubernetes from "it works on
-  the lead's laptop" to "the on-call rotation actually sleeps" — bare-metal,
-  GitOps, OpenTelemetry, and zero-downtime everything.
+  DevOps / Platform Engineer. I build and operate production Kubernetes
+  clusters on bare metal — GitOps, observability, and zero-downtime everything.
 
   ---
-
-  #### A few things I've shipped
-
-  - **99.9% uptime** on a bare-metal Kubernetes cluster (kubeadm, Cilium, Envoy
-    Gateway) running production multi-tenant SaaS — 70k+ bookings, 11k+ vehicles
-  - **92% infrastructure cost reduction** migrating workloads off Heroku into
-    self-managed K8s with full GitOps automation
-  - **Eliminated 413ms rollout downtime** by moving WebSocket/SSE traffic from
-    Cilium's built-in Gateway API to standalone Envoy Gateway
-  - **Owned the Datadog → self-managed observability migration** — Prometheus,
-    Grafana, Loki, Alertmanager, OpenTelemetry — for cost control and full
-    data ownership
-  - **Three-layer GitOps architecture** with ArgoCD ApplicationSets
-    (Bootstrap → Infrastructure → Applications), Kustomize overlays, sync waves,
-    PreSync hooks for automated database migrations
 
   #### What I do day-to-day
 
   - Architect and operate self-hosted Kubernetes — kubeadm, Cilium (eBPF
     kube-proxy replacement, Hubble L7 observability), Envoy Gateway on
     Gateway API v1.4.1
-  - Build full GitOps platforms with ArgoCD ApplicationSets, Kustomize, sync
-    waves, and automated DB migrations via PreSync hooks
-  - Run self-managed observability stacks instead of paying vendors —
-    Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Hubble
-  - Secure the cluster: HashiCorp Vault KV v2, External Secrets Operator,
-    cert-manager Let's Encrypt automation, container hardening
-    (runAsNonRoot, seccompProfile, dropped capabilities), PodDisruptionBudgets
+  - Build GitOps platforms with ArgoCD ApplicationSets, Kustomize, sync
+    waves, and automated database migrations via PreSync hooks
+  - Run self-managed observability stacks — Prometheus, Grafana, Loki,
+    Alertmanager, OpenTelemetry, Hubble
+  - Secure the cluster: HashiCorp Vault, External Secrets Operator,
+    cert-manager, container hardening, PodDisruptionBudgets
   - Apply agentic-AI tooling (Claude Code) to platform tasks — manifest
     generation, GitOps debugging, operational scripting
   - Automate the things that should be automated; document the rest
 
   #### Currently
 
-  - Wrapping up 3.5 years as Former Platform Engineer / Co-founder at **KITTS**
-    (Sep 2022 – Apr 2026)
+  - Wrapping up Former Platform Engineer / Co-founder at **KITTS**
+    (Sep 2022 – Apr 2026), where I built and ran the bare-metal Kubernetes
+    platform for the team
   - Operating a personal bare-metal Kubernetes cluster for side projects,
     e-commerce, and home services — full GitOps, Renovate, monitoring stack
   - Learning German (A1 certified, working toward B1)
@@ -58,20 +42,18 @@
   **Languages:** Bash, Python, Go, TypeScript, SQL
   **Data:** PostgreSQL (CloudNativePG), MySQL/MariaDB, Redis/Valkey, Longhorn
 
-  #### Selected work
+  #### Things I've built
 
-  - **[WynnAspects](https://wynnaspects.com)** — production microservices
-    platform serving 2,000+ active users and 2M+ monthly API requests on
-    bare-metal Kubernetes. ArgoCD GitOps, Harbor private registry,
+  - **[WynnAspects](https://wynnaspects.com)** — live microservices platform
+    on bare-metal Kubernetes. ArgoCD GitOps, Harbor private registry,
     CloudNativePG PostgreSQL, Longhorn distributed storage, Cloudflare-backed
-    edge. Application services instrumented with OpenTelemetry for traces and
-    metrics.
+    edge. Application services instrumented with OpenTelemetry for traces
+    and metrics.
 
   - **Personal Kubernetes infrastructure** — self-managed bare-metal cluster
     (2 nodes) running e-commerce (PrestaShop + MariaDB), workflow automation
     (n8n), and Discord bot workloads. Full ArgoCD ApplicationSets,
-    Renovate-driven dependency updates, monitoring stack — for hands-on
-    reliability engineering.
+    Renovate-driven dependency updates, monitoring stack.
 
   - **[GraphICE](https://icebreaker8.github.io/graphICE-website/)** — C# / .NET
     desktop app for graph algorithm visualization (Dijkstra, Bellman-Ford,
