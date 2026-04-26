@@ -11,9 +11,8 @@ Day to day, I spend most of my time:
 - Running and improving self-hosted Kubernetes clusters (kubeadm, Cilium with eBPF, Envoy Gateway on Gateway API)
 - Building GitOps workflows with ArgoCD (ApplicationSets, Kustomize, sync waves, PreSync DB migrations, etc.)
 - Maintaining observability stacks — Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Hubble
-- Locking things down with Vault, External Secrets Operator, cert-manager, and general container hardening
+- Environment secrets are securely stored with Vault, External Secrets Operator, cert-manager, and general container hardening
 - Using AI tools (mostly Claude Code) to speed up repetitive platform work (manifests, debugging, scripting)
-- Automating what makes sense, documenting what doesn’t
 
 ---
 
