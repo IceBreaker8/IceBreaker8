@@ -67,7 +67,6 @@ PostgreSQL (CloudNativePG), MySQL/MariaDB, Redis/Valkey, Longhorn
 
 ### How I think about infrastructure
 
-> Boring infra is good infra. The most interesting thing in production should be the application — not the platform underneath it.
 
 I try to keep everything in Git, self-host where it actually matters (cost, control, data), and rely on external services where it doesn’t.  
 When something breaks, I focus on fixing the root cause and making sure it doesn’t happen again.
