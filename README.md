@@ -1,6 +1,6 @@
  ### Hi, I'm Ahmed
 
-  DevOps / Platform Engineer based in Schweinfurt, Germany.
+  DevOps / Platform Engineer.
   I build and operate production Kubernetes clusters on bare metal — GitOps,
   observability, and zero-downtime everything.
 
@@ -24,8 +24,7 @@
   - Operating a personal bare-metal Kubernetes cluster for side projects and
     home services — full GitOps, Renovate, monitoring stack
   - Learning German (A1 certified, working toward B1)
-  - **Open to DevOps / Platform / SRE roles in Germany** — Chancenkarte holder,
-    eligible for Blue Card upon offer
+  - **Open to DevOps / Platform / SRE roles** — reach out via LinkedIn
 
   #### Stack
 
@@ -66,5 +65,4 @@
 
   #### Reach me
 
-  [LinkedIn](https://www.linkedin.com/in/ahmed-frikha-kitts/) ·
-  [Email](mailto:ahmadfrikha11@gmail.com)
+  [LinkedIn](https://www.linkedin.com/in/ahmed-frikha-kitts/)
