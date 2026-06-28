@@ -22,7 +22,7 @@
 
   - Recently wrapped up my time as Platform Engineer / Co-founder at **KITTS** (Sep 2022 – Apr 2026), where I built and ran a bare-metal Kubernetes platform
   - Running my own small bare-metal cluster for side projects, e-commerce, and home services (full GitOps, monitoring, Renovate, etc.)
-  - Learning German (A1 done, working toward B1)
+  - Learning German.
   - Open to DevOps / Platform / SRE roles
 
   ---
