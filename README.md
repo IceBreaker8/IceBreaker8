@@ -1,6 +1,6 @@
  ### Hi, I'm Ahmed
 
-  I'm a DevOps / Platform Engineer focused on building and running production Kubernetes clusters on bare metal — and I also write the microservices, full-stack apps, and Discord bots that run on top of them. Most of my work revolves around GitOps, observability, and making sure
+  I'm a Software Engineer focused on building full stack applications and running production Kubernetes clusters on AWS/bare metal — and I also write the microservices, full-stack apps, and Discord bots that run on top of them. Most of my work revolves around GitOps, observability, and making sure
   things don't go down when they shouldn't.
 
   ---
