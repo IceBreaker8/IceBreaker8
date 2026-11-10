@@ -22,7 +22,7 @@ Day to day, I spend most of my time:
 - Co-founder of [KITTS](https://kitts.io), a SaaS for vehicle rental and fleet management, which I still maintain
 - Leading engineering on FPS Navigator (now Qasqad), a B2B parking-penalty platform KITTS acquired: its Scaleway Kubernetes platform, the ANTAI traffic-fines module, and the OCR and billing pipeline
 - Running my own bare-metal cluster for side projects, e-commerce and home services (full GitOps, monitoring, Renovate)
-- Learning German (A2, working toward B1)
+- Learning German (A1, working toward B2)
 - **Open to full-time DevOps / Backend / Platform roles in Munich and across Germany**
 
 ---
@@ -68,7 +68,7 @@ PostgreSQL (Amazon RDS, CloudNativePG), MySQL/MariaDB, Redis/Valkey, Longhorn
 
 - **WynnAspects** ([wynnaspects.com](https://wynnaspects.com)): an event-driven microservices platform running on my bare-metal cluster. NestJS APIs, an Angular SSR frontend, real-time WebSocket and SSE services, Kafka and BullMQ behind a transactional outbox, Valkey caching, and OpenTelemetry tracing into Grafana Tempo. Shipped with ArgoCD GitOps, Harbor and CloudNativePG.
 
-- **Personal Kubernetes cluster**: a 3-node bare-metal cluster (1 control plane + 2 workers, kubeadm) running WynnAspects, e-commerce (PrestaShop + MariaDB), automation (n8n) and Discord bots. Managed with ArgoCD ApplicationSets and Renovate, with CloudNativePG backups whose restore is tested, not just configured. [Repo](https://github.com/IceBreaker8/icedev-argocd-cluster)
+- **Personal Kubernetes cluster**: a 3-node bare-metal cluster (1 control plane + 2 workers, kubeadm) running WynnAspects, e-commerce (PrestaShop + MariaDB), automation (n8n) and Discord bots. Managed with ArgoCD ApplicationSets and Renovate, with CloudNativePG backups whose restore is tested, not just configured.
 
 - **GraphICE**: C# / .NET desktop app for visualizing graph algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall). Built during my student years but still useful for teaching.
 
