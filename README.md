@@ -1,6 +1,6 @@
 ### Hi, I'm Ahmed
 
-I'm a Software Engineer based in Munich, working across DevOps and backend: I run production Kubernetes on AWS, Scaleway and bare metal, and I write the NestJS services, integrations and full-stack apps that run on top of it. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
+I'm a Backend & DevOps Engineer based in Munich: I write the NestJS services, integrations and full-stack apps, and I run the production Kubernetes they live on, on AWS, Scaleway and bare metal. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
 
 ---
 
@@ -9,10 +9,15 @@ I'm a Software Engineer based in Munich, working across DevOps and backend: I ru
 Day to day, I spend most of my time:
 
 - Running production Kubernetes on managed clouds (Amazon EKS, Scaleway Kubernetes Kapsule) and on my own bare-metal cluster (kubeadm, Cilium with eBPF, Envoy Gateway on Gateway API)
+
 - Building GitOps and CI/CD workflows with ArgoCD, GitHub Actions and GitLab CI (ApplicationSets, Kustomize, Helm, sync waves, PreSync DB migrations)
+
 - Maintaining observability stacks: Prometheus, Grafana, Loki, Tempo, Alertmanager, OpenTelemetry, Hubble
+
 - Keeping secrets out of Git: HashiCorp Vault with External Secrets Operator, SOPS/age, cert-manager, plus general container hardening
+
 - Writing backends in NestJS and PostgreSQL with queues (Bull, BullMQ, Kafka), and integrating third-party and government APIs (Stripe, DocuSign, ANTAI)
+
 - Using AI tools (mostly Claude Code) to speed up repetitive platform work (manifests, debugging, scripting)
 
 ---
@@ -20,9 +25,13 @@ Day to day, I spend most of my time:
 ### Currently
 
 - Co-founder of [KITTS](https://kitts.io), a SaaS for vehicle rental and fleet management, which I still maintain
-- Leading engineering on FPS Navigator (now Qasqad), a B2B parking-penalty platform KITTS acquired: its Scaleway Kubernetes platform, the ANTAI traffic-fines module, and the OCR and billing pipeline
+
+- Engineer on FPS Navigator (now Qasqad), a B2B parking-penalty platform KITTS acquired: I own its backend and its Scaleway Kubernetes platform, the OCR and billing pipeline (4,400+ fines processed for 8 organisations), and I'm building the ANTAI traffic-fines module for the next version
+
 - Running my own bare-metal cluster for side projects, e-commerce and home services (full GitOps, monitoring, Renovate)
+
 - Learning German (A1, working toward B2)
+
 - **Open to full-time DevOps / Backend / Platform roles in Munich and across Germany**
 
 ---
@@ -62,7 +71,9 @@ PostgreSQL (Amazon RDS, CloudNativePG), MySQL/MariaDB, Redis/Valkey, Longhorn
 
 ### Things I've built
 
-- **ANTAI traffic-fines module (FPS Navigator)**: receives fines from the French State's fleet API, routes them, designates the driver on a click, in a batch or automatically, and tracks statuses and receipts. NestJS, PostgreSQL, Bull queues, browser-driven Playwright end-to-end tests.
+- **KITTS platform**: the rental SaaS I co-founded, built in Node.js and TypeScript (Strapi and NestJS) on PostgreSQL, with Stripe and DocuSign. It has handled 79k+ bookings across 11k+ vehicles. I moved it from Heroku to Amazon EKS with Terraform (62% cheaper, 99.9% uptime), then in 2025 to a self-managed Kubernetes cluster on dedicated servers, taking hosting from €600 a month on Heroku to €50.
+
+- **ANTAI traffic-fines module (FPS Navigator, for the next version of the platform)**: receives fines from the French State's fleet API, routes them, designates the driver on a click, in a batch or automatically, and tracks statuses and receipts. NestJS, PostgreSQL, Bull queues, browser-driven Playwright end-to-end tests.
 
 - **FPS Navigator platform**: Helm-deployed services on Scaleway Kubernetes Kapsule with SOPS-encrypted secrets, Traefik and cert-manager, separate staging and v2 environments, and a deploy guard that refuses any release able to reach production by mistake.
 
