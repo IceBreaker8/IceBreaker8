@@ -1,6 +1,6 @@
 ### Hi, I'm Ahmed
 
-I'm a Backend & DevOps Engineer based in Munich: I write the NestJS services, integrations and full-stack apps, and I run the production Kubernetes they live on, on AWS, Scaleway and bare metal. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
+I'm a Software Engineer based in Munich, working on backend and DevOps: I write the NestJS services, integrations and full-stack apps, and I run the production Kubernetes they live on, on AWS, Scaleway and bare metal. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
 
 ---
 
