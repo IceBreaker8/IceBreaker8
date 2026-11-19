@@ -1,6 +1,6 @@
 ### Hi, I'm Ahmed
 
-I'm a Software Engineer based in Munich, working on backend and DevOps: I write the NestJS services, integrations and full-stack apps, and I run the production Kubernetes they live on, on AWS, Scaleway and bare metal. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
+I'm a Software Engineer based in Munich, working on backend and DevOps: I write the NestJS services and integrations (and the Next.js or Angular screens on top of them when needed), and I run the production Kubernetes they live on, on AWS, Scaleway and bare metal. Most of my work revolves around GitOps, observability, and making sure things don't go down when they shouldn't.
 
 ---
 
@@ -24,9 +24,9 @@ Day to day, I spend most of my time:
 
 ### Currently
 
-- Co-founder of [KITTS](https://kitts.io), a SaaS for vehicle rental and fleet management, which I still maintain
+- Co-founder and software engineer at [KITTS](https://kitts.io), a B2B mobility SaaS startup: I build and run both of its products, the KITTS rental platform and Qasqad
 
-- Software engineer on [Qasqad](https://qasqad.com) (formerly FPS Navigator), a B2B parking-fines platform KITTS acquired: I own its backend, its Stripe billing and its Scaleway Kubernetes platform (4,400+ fines processed for 8 client companies), ran its v2 launch in November 2026, and I'm building its ANTAI traffic-fines module
+- I own the engineering of [Qasqad](https://qasqad.com/en) (formerly FPS Navigator), a B2B parking-fines platform KITTS acquired in August 2026: its NestJS backend, its Stripe billing and its Scaleway Kubernetes platform (4,400+ fines processed for 8 client companies). I ran its launch in November 2026 and I'm building its ANTAI traffic-fines module
 
 - Running my own bare-metal cluster for side projects, e-commerce and home services (full GitOps, monitoring, Renovate)
 
@@ -73,11 +73,11 @@ PostgreSQL (Amazon RDS, CloudNativePG), MySQL/MariaDB, Redis/Valkey, Longhorn
 
 - **KITTS platform**: the rental SaaS I co-founded, built in Node.js and TypeScript (Strapi and NestJS) on PostgreSQL, with Stripe and DocuSign. It has handled 79k+ bookings across 11k+ vehicles. I moved it from Heroku to Amazon EKS with Terraform (62% cheaper, 99.9% uptime), then in 2025 to a self-managed Kubernetes cluster on dedicated servers, taking hosting from €600 a month on Heroku to €50.
 
-- **Qasqad backend**: Stripe billing for SEPA direct debit and card, with an idempotency key on every payment so no client has ever been charged twice, and an OCR pipeline (Mistral AI since June 2026) that has read 3,700+ paper fine notices. For the v2 launch I migrated 99k+ vehicle assignments and every API key to per-organisation accounts, after catching a migration bug that would have sent live API keys to the wrong customer. 168 Playwright end-to-end tests cover every fine flow.
+- **Qasqad backend**: Stripe billing for SEPA direct debit and card that charges each client company once per batch of fines, with an idempotency key on every payment so no batch has ever been charged twice, and an OCR pipeline (Mistral AI since June 2026) that has read 3,700+ paper fine notices. For the Qasqad launch I migrated 99k+ vehicle assignments and every API key to per-organisation accounts, after catching a migration bug that would have sent live API keys to the wrong customer. 168 Playwright end-to-end tests cover every fine flow.
 
 - **ANTAI traffic-fines module (Qasqad, work in progress)**: takes fines in hourly from the French State's fleet API, routes them, designates the driver on a click, in a batch or automatically, and tracks statuses and receipts. NestJS, PostgreSQL, Bull queues.
 
-- **Qasqad platform**: Helm-deployed services on Scaleway Kubernetes Kapsule with SOPS-encrypted secrets, Traefik and cert-manager, separate staging and production environments, a deploy guard that refuses any release able to reach production by mistake, and the rehearsed cut-over runbook I used to launch v2.
+- **Qasqad platform**: Helm-deployed services on Scaleway Kubernetes Kapsule with SOPS-encrypted secrets, Traefik and cert-manager, separate staging and production environments, a deploy guard that refuses any release able to reach production by mistake, and the rehearsed cut-over runbook I used for the launch.
 
 - **WynnAspects** ([wynnaspects.com](https://wynnaspects.com)): an event-driven microservices platform running on my bare-metal cluster. NestJS APIs, an Angular SSR frontend, real-time WebSocket and SSE services, Kafka and BullMQ behind a transactional outbox, Valkey caching, and OpenTelemetry tracing into Grafana Tempo. Shipped with ArgoCD GitOps, Harbor and CloudNativePG.
 
